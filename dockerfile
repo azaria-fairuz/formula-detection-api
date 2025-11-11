@@ -20,4 +20,4 @@ COPY ./.env.example ./.env
 
 EXPOSE 8102
 
-CMD ["fastapi", "run", "main.py", "--port=8102", "--port=0.0.0.0"]
+CMD ["fastapi", "run", "main.py", "--port=8102", "--hostport=0.0.0.0"]
