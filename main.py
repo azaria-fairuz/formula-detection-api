@@ -5,6 +5,9 @@ import random
 from dotenv import load_dotenv
 load_dotenv(override=True)
 
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "1"
+
 tmp = os.path.join(os.getcwd(), 'temp')
 sts = os.getenv('APP_STATUS', 'development')
 
